@@ -15,9 +15,9 @@ The goal of this project is to create an end-to-end ETL process and a Power BI d
 
 ---
 
-## Step 1: ETL Process in SQL Server
+## Step 1: ETL Process in MySQL
 
-The ETL (Extract, Transform, Load) process begins with setting up a database using Microsoft SQL Server. This involves importing the raw customer data into SQL Server for further exploration, cleaning, and transformation.
+The ETL (Extract, Transform, Load) process begins with setting up a database using MySQL. This involves importing the raw customer data into MySQL for further exploration, cleaning, and transformation.
 
 ### 1.1 Creating a Database
 ```sql
@@ -74,7 +74,7 @@ SELECT * FROM prod_Churn WHERE Customer_Status IN ('Churned', 'Stayed');
 
 ## Step 2: Power BI Transformation
 
-Once the data is loaded into SQL Server, we perform additional transformations in Power BI to prepare the data for visualization.
+Once the data is loaded into MySQL, we perform additional transformations in Power BI to prepare the data for visualization.
 
 ### 2.1 Adding Columns
 - **Churn Status**: A column where 'Churned' customers are marked as `1` and others as `0`.
